@@ -1,0 +1,38 @@
+﻿<Window x:Class="ZAD5_WPF_NIEWEGLOWSKI.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZAD5_WPF_NIEWEGLOWSKI"
+        mc:Ignorable="d"
+        Title="Użytkownik" SizeToContent="Height" Width="300">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Margin="3" Grid.Row="0">Imię:</Label>
+        <TextBox Margin="3" Grid.Column="1" Grid.Row="0" Name="Imie" x:FieldModifier="public"/>
+
+        <Label Margin="3" Grid.Row="1">Nazwisko:</Label>
+        <TextBox Margin="3" Grid.Column="1" Grid.Row="1" Name="Nazwisko" x:FieldModifier="public"/>
+
+        <Label Margin="3" Grid.Row="2">Email:</Label>
+        <TextBox Margin="3" Grid.Column="1" Grid.Row="2" Name="Email" x:FieldModifier="public"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+            <Button Margin="3" Padding="15,3" Click="OkClick" Name="okbutton" x:FieldModifier="public">OK</Button>
+            <Button Margin="3" Padding="15,3" Click="CloseClick">Anuluj</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
